@@ -1,4 +1,4 @@
 bionames-design
 ===============
 
-Design documents for BioNams project
+Design documents for BioNames project
