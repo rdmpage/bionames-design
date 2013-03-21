@@ -1,0 +1,104 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2e3033;
+}
+
+
+/* Publication Lists */
+.decadeYear {
+  background: url(../images/decade_dot.gif) no-repeat left center;
+  padding-left: 10px;
+  color: #bbbfc6;
+  font-weight: 700;
+  line-height: 30px;  
+}
+
+.pub {
+  overflow: hidden; /* clearfix */
+  margin-left: 3px;
+  padding: 1em;
+  background-color: #fafafa;
+  border-bottom: 1px solid #fff;
+  border-left: 2px solid #c3c7ce;
+ }
+ 
+ .pub:nth-child(2) {
+   border-top: 1px solid #f9f9f9;
+ }
+
+.pub .thumbnail {
+  float: left;
+  width:  40px;
+  height: 60px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+.pub .thumbnail img {
+  display: block;
+  width:  40px;
+  height: 60px;
+  border-radius: 2px;
+}
+
+.pub .citation {
+  margin-left: 50px;
+  padding-right: 10px;
+}
+
+.pub .title {
+  font-weight: 700;
+}
+
+.pub .meta {
+  font-size: 12px;
+}
+
+.pub .meta,
+.pub .meta span.j-sep{
+  color: #737880;
+}
+
+.pub .meta span {
+  color: #45494d;
+}
+
+.pub .journal {
+  font-style: italic;
+}
+
+
+svg .bars {
+  shape-rendering: crispEdges;
+}
+svg .axis path,
+svg .axis line {
+    fill: none;
+    stroke: #737880;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+svg .axis .domain {
+  display: none;
+}
+        
+svg .axis text {
+    font-size: 11px;
+}
+
+svg .brush .extent {
+  fill: rgba(0,0,0, 0.08);
+  stroke: none;
+}
+
+svg .brush .resize path {
+  fill: #fff;
+  stroke: #737880;
+  stroke-width: 1;
+}

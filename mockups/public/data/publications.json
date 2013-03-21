@@ -1,0 +1,1217 @@
+{
+  "status": 200,
+  "url": "_design\/publication\/_view\/tags?startkey=%5B%22Apomys%22%5D&endkey=%5B%22Apomys%22%2C%7B%7D%5D&reduce=false",
+  "years": {
+    "1905": {
+      "biostor\/79013": {
+        "_id": "biostor\/79013",
+        "_rev": "1-a2ce1d06b8d7e386e1b60d34dc9b8227",
+        "author": [
+          {
+            "firstname": "Edgar A",
+            "lastname": "Mearns",
+            "name": "Edgar A Mearns"
+          }
+        ],
+        "type": "article",
+        "title": "Descriptions of new genera and species of mammals from the Philippine Islands",
+        "journal": {
+          "name": "Proceedings of The United States National Museum",
+          "volume": "28",
+          "issue": "1402",
+          "pages": "425--460",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0096-3801"
+            }
+          ]
+        },
+        "year": "1905",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/79013"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/15393041"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 79013
+          },
+          {
+            "type": "bhl",
+            "id": 15393041
+          },
+          {
+            "type": "doi",
+            "id": "10.5479\/si.00963801.1402.425"
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T16:33:22+0000",
+            "url": "http:\/\/biostor.org\/reference\/79013.json"
+          }
+        },
+        "citation": "Edgar A Mearns (1905) Descriptions of new genera and species of mammals from the Philippine Islands. Proceedings of The United States National Museum, 28(1402): 425--460",
+        "thumbnail_url": "id\/biostor\/79013\/thumbnail\/image"
+      }
+    },
+    "1942": {
+      "biostor\/125890": {
+        "_id": "biostor\/125890",
+        "_rev": "2-b874fef8a0d5a06358fe94df2829e7a6",
+        "author": [
+          {
+            "firstname": "Arthur J",
+            "lastname": "Poole",
+            "name": "Arthur J Poole"
+          },
+          {
+            "firstname": "Viola S",
+            "lastname": "Schantz",
+            "name": "Viola S Schantz"
+          }
+        ],
+        "type": "article",
+        "title": "Catalog of the type specimens of mammals in the United States National Museum, including the biological surveys collection",
+        "journal": {
+          "name": "Bulletin - United States National Museum",
+          "volume": "178",
+          "pages": "1--705",
+          "identifier": [
+            {
+              "type": "oclc",
+              "id": 1284235
+            }
+          ]
+        },
+        "year": "1942",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/125890"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/7843026"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 125890
+          },
+          {
+            "type": "bhl",
+            "id": 7843026
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-14T13:45:11+0000",
+            "url": "http:\/\/biostor.org\/reference\/125890.json"
+          }
+        },
+        "citation": "Arthur J Poole, Viola S Schantz (1942) Catalog of the type specimens of mammals in the United States National Museum, including the biological surveys collection. Bulletin - United States National Museum, 178: 1--705",
+        "bhl_pages": [
+          7843026,
+          7843025,
+          7843024,
+          7843023,
+          7843022,
+          7843021,
+          7843020,
+          7843019,
+          7843018,
+          7843017,
+          7843016,
+          7843015,
+          7843014,
+          7843013,
+          7843012,
+          7843011,
+          7843010,
+          7843009,
+          7843008,
+          7842975,
+          7842976,
+          7842977,
+          7842978,
+          7842979,
+          7842980,
+          7842981,
+          7842982,
+          7842983,
+          7842984,
+          7842985,
+          7842986,
+          7842987,
+          7842988,
+          7842989,
+          7842990,
+          7842991,
+          7842992,
+          7842993,
+          7842994,
+          7842995,
+          7842996,
+          7842997,
+          7842998,
+          7842999,
+          7843000,
+          7843001,
+          7843002,
+          7843003,
+          7843004,
+          7843005,
+          7843006,
+          7843007,
+          7843031,
+          7843032,
+          7843033,
+          7843034,
+          7843035,
+          7843036,
+          7843037,
+          7843038,
+          7843039,
+          7843040,
+          7843041,
+          7843042,
+          7843043,
+          7843044,
+          7843045,
+          7843046,
+          7843047,
+          7843048,
+          7843049,
+          7843050,
+          7843051,
+          7843052,
+          7843053,
+          7843054,
+          7843055,
+          7843056,
+          7843057,
+          7843058,
+          7843059,
+          7843060,
+          7843061,
+          7843062,
+          7843063,
+          7843064,
+          7843065,
+          7843066,
+          7843067,
+          7843068,
+          7843069,
+          7843070,
+          7843071,
+          7843072,
+          7843073,
+          7843074,
+          7843075,
+          7843076,
+          7843077,
+          7843078,
+          7843079,
+          7843080,
+          7843081,
+          7843082,
+          7843083,
+          7843084,
+          7843085,
+          7843086,
+          7843087,
+          7843088,
+          7843089,
+          7843090,
+          7843091,
+          7843092,
+          7843093,
+          7843094,
+          7843095,
+          7843096,
+          7843097,
+          7843098,
+          7843099,
+          7843100,
+          7843101,
+          7843102,
+          7843103,
+          7843104,
+          7843105,
+          7843106,
+          7843107,
+          7843108,
+          7843109,
+          7843110,
+          7843111,
+          7843112,
+          7843113,
+          7843114,
+          7843115,
+          7843116,
+          7843117,
+          7843118,
+          7843119,
+          7843120,
+          7843121,
+          7843122,
+          7843123,
+          7843124,
+          7843125,
+          7843126,
+          7843127,
+          7843128,
+          7843129,
+          7843130,
+          7843131,
+          7843132,
+          7843133,
+          7843134,
+          7843135,
+          7843136,
+          7843137,
+          7843138,
+          7843139,
+          7843140,
+          7843141,
+          7843142,
+          7843143,
+          7843144,
+          7843145,
+          7843146,
+          7843147,
+          7843148,
+          7843149,
+          7843150,
+          7843151,
+          7843152,
+          7843153,
+          7843154,
+          7843155,
+          7843156,
+          7843157,
+          7843158,
+          7843159,
+          7843160,
+          7843161,
+          7843162,
+          7843163,
+          7843164,
+          7843165,
+          7843166,
+          7843167,
+          7843168,
+          7843169,
+          7843170,
+          7843171,
+          7843172,
+          7843173,
+          7843174,
+          7843175,
+          7843176,
+          7843177,
+          7843178,
+          7843179,
+          7843180,
+          7843181,
+          7843182,
+          7843183,
+          7843184,
+          7843185,
+          7843186,
+          7843187,
+          7843188,
+          7843189,
+          7843190,
+          7843191,
+          7843192,
+          7843193,
+          7843194,
+          7843195,
+          7843196,
+          7843197,
+          7843198,
+          7843199,
+          7843200,
+          7843201,
+          7843202,
+          7843203,
+          7843204,
+          7843205,
+          7843206,
+          7843207,
+          7843208,
+          7843209,
+          7843210,
+          7843211,
+          7843212,
+          7843213,
+          7843214,
+          7843215,
+          7843216,
+          7843217,
+          7843218,
+          7843219,
+          7843220,
+          7843221,
+          7843222,
+          7843223,
+          7843224,
+          7843225,
+          7843226,
+          7843227,
+          7843228,
+          7843229,
+          7843230,
+          7843231,
+          7843232,
+          7843233,
+          7843234,
+          7843235,
+          7843236,
+          7843237,
+          7843238,
+          7843239,
+          7843240,
+          7843241,
+          7843242,
+          7843243,
+          7843244,
+          7843245,
+          7843246,
+          7843247,
+          7843248,
+          7843249,
+          7843250,
+          7843251,
+          7843252,
+          7843253,
+          7843254,
+          7843255,
+          7843256,
+          7843257,
+          7843258,
+          7843259,
+          7843260,
+          7843261,
+          7843262,
+          7843263,
+          7843264,
+          7843265,
+          7843266,
+          7843267,
+          7843268,
+          7843269,
+          7843270,
+          7843271,
+          7843272,
+          7843273,
+          7843274,
+          7843275,
+          7843276,
+          7843277,
+          7843278,
+          7843279,
+          7843280,
+          7843281,
+          7843282,
+          7843283,
+          7843284,
+          7843285,
+          7843286,
+          7843287,
+          7843288,
+          7843289,
+          7843290,
+          7843291,
+          7843292,
+          7843293,
+          7843294,
+          7843295,
+          7843296,
+          7843297,
+          7843298,
+          7843299,
+          7843300,
+          7843301,
+          7843302,
+          7843303,
+          7843304,
+          7843305,
+          7843306,
+          7843307,
+          7843308,
+          7843309,
+          7843310,
+          7843311,
+          7843312,
+          7843313,
+          7843314,
+          7843315,
+          7843316,
+          7843317,
+          7843318,
+          7843319,
+          7843320,
+          7843321,
+          7843322,
+          7843323,
+          7843324,
+          7843325,
+          7843326,
+          7843327,
+          7843328,
+          7843329,
+          7843330,
+          7843331,
+          7843332,
+          7843333,
+          7843334,
+          7843335,
+          7843336,
+          7843337,
+          7843338,
+          7843339,
+          7843340,
+          7843341,
+          7843342,
+          7843343,
+          7843344,
+          7843345,
+          7843346,
+          7843347,
+          7843348,
+          7843349,
+          7843350,
+          7843351,
+          7843352,
+          7843353,
+          7843354,
+          7843355,
+          7843356,
+          7843357,
+          7843358,
+          7843359,
+          7843360,
+          7843361,
+          7843362,
+          7843363,
+          7843364,
+          7843365,
+          7843366,
+          7843367,
+          7843368,
+          7843369,
+          7843370,
+          7843371,
+          7843372,
+          7843373,
+          7843374,
+          7843375,
+          7843376,
+          7843377,
+          7843378,
+          7843379,
+          7843380,
+          7843381,
+          7843382,
+          7843383,
+          7843384,
+          7843385,
+          7843386,
+          7843387,
+          7843388,
+          7843389,
+          7843390,
+          7843391,
+          7843392,
+          7843393,
+          7843394,
+          7843395,
+          7843396,
+          7843397,
+          7843398,
+          7843399,
+          7843400,
+          7843401,
+          7843402,
+          7843403,
+          7843404,
+          7843405,
+          7843406,
+          7843407,
+          7843408,
+          7843409,
+          7843410,
+          7843411,
+          7843412,
+          7843413,
+          7843414,
+          7843415,
+          7843416,
+          7843417,
+          7843418,
+          7843419,
+          7843420,
+          7843421,
+          7843422,
+          7843423,
+          7843424,
+          7843425,
+          7843426,
+          7843427,
+          7843428,
+          7843429,
+          7843430,
+          7843431,
+          7843432,
+          7843433,
+          7843434,
+          7843435,
+          7843436,
+          7843437,
+          7843438,
+          7843439,
+          7843440,
+          7843441,
+          7843442,
+          7843443,
+          7843444,
+          7843445,
+          7843446,
+          7843447,
+          7843448,
+          7843449,
+          7843450,
+          7843451,
+          7843452,
+          7843453,
+          7843454,
+          7843455,
+          7843456,
+          7843457,
+          7843458,
+          7843459,
+          7843460,
+          7843461,
+          7843462,
+          7843463,
+          7843464,
+          7843465,
+          7843466,
+          7843467,
+          7843468,
+          7843469,
+          7843470,
+          7843471,
+          7843472,
+          7843473,
+          7843474,
+          7843475,
+          7843476,
+          7843477,
+          7843478,
+          7843479,
+          7843480,
+          7843481,
+          7843482,
+          7843483,
+          7843484,
+          7843485,
+          7843486,
+          7843487,
+          7843488,
+          7843489,
+          7843490,
+          7843491,
+          7843492,
+          7843493,
+          7843494,
+          7843495,
+          7843496,
+          7843497,
+          7843498,
+          7843499,
+          7843500,
+          7843501,
+          7843502,
+          7843503,
+          7843504,
+          7843505,
+          7843506,
+          7843507,
+          7843508,
+          7843509,
+          7843510,
+          7843511,
+          7843512,
+          7843513,
+          7843514,
+          7843515,
+          7843516,
+          7843517,
+          7843518,
+          7843519,
+          7843520,
+          7843521,
+          7843522,
+          7843523,
+          7843524,
+          7843525,
+          7843526,
+          7843527,
+          7843528,
+          7843529,
+          7843530,
+          7843531,
+          7843532,
+          7843533,
+          7843534,
+          7843535,
+          7843536,
+          7843537,
+          7843538,
+          7843539,
+          7843540,
+          7843541,
+          7843542,
+          7843543,
+          7843544,
+          7843545,
+          7843546,
+          7843547,
+          7843548,
+          7843549,
+          7843550,
+          7843551,
+          7843552,
+          7843553,
+          7843554,
+          7843555,
+          7843556,
+          7843557,
+          7843558,
+          7843559,
+          7843560,
+          7843561,
+          7843562,
+          7843563,
+          7843564,
+          7843565,
+          7843566,
+          7843567,
+          7843568,
+          7843569,
+          7843570,
+          7843571,
+          7843572,
+          7843573,
+          7843574,
+          7843575,
+          7843576,
+          7843577,
+          7843578,
+          7843579,
+          7843580,
+          7843581,
+          7843582,
+          7843583,
+          7843584,
+          7843585,
+          7843586,
+          7843587,
+          7843588,
+          7843589,
+          7843590,
+          7843591,
+          7843592,
+          7843593,
+          7843594,
+          7843595,
+          7843596,
+          7843597,
+          7843598,
+          7843599,
+          7843600,
+          7843601,
+          7843602,
+          7843603,
+          7843604,
+          7843605,
+          7843606,
+          7843607,
+          7843608,
+          7843609,
+          7843610,
+          7843611,
+          7843612,
+          7843613,
+          7843614,
+          7843615,
+          7843616,
+          7843617,
+          7843618,
+          7843619,
+          7843620,
+          7843621,
+          7843622,
+          7843623,
+          7843624,
+          7843625,
+          7843626,
+          7843627,
+          7843628,
+          7843629,
+          7843630,
+          7843631,
+          7843632,
+          7843633,
+          7843634,
+          7843635,
+          7843636,
+          7843637,
+          7843638,
+          7843639,
+          7843640,
+          7843641,
+          7843642,
+          7843643,
+          7843644,
+          7843645,
+          7843646,
+          7843647,
+          7843648,
+          7843649,
+          7843650,
+          7843651,
+          7843652,
+          7843653,
+          7843654,
+          7843655,
+          7843656,
+          7843657,
+          7843658,
+          7843659,
+          7843660,
+          7843661,
+          7843662,
+          7843663,
+          7843664,
+          7843665,
+          7843666,
+          7843667,
+          7843668,
+          7843669,
+          7843670,
+          7843671,
+          7843672,
+          7843673,
+          7843674,
+          7843675,
+          7843676,
+          7843677,
+          7843678,
+          7843679,
+          7843680,
+          7843681,
+          7843682,
+          7843683,
+          7843684,
+          7843685,
+          7843686,
+          7843687,
+          7843688,
+          7843689,
+          7843690,
+          7843691,
+          7843692,
+          7843693,
+          7843694,
+          7843695,
+          7843696,
+          7843697
+        ],
+        "thumbnail_url": "id\/biostor\/125890\/thumbnail\/image"
+      }
+    },
+    "1995": {
+      "biostor\/65542": {
+        "_id": "biostor\/65542",
+        "_rev": "1-ce613d67f80415aa01698ce6d684a245",
+        "author": [
+          {
+            "firstname": "Luis A",
+            "lastname": "Ruedas",
+            "name": "Luis A Ruedas"
+          }
+        ],
+        "type": "article",
+        "title": "Description of a new large-bodied species of Apomys Mearns, 1905 (Mammalia: Rodentia: Muridae) from Mindoro Island, Philippines",
+        "journal": {
+          "name": "Proceedings of the Biological Society of Washington",
+          "volume": "108",
+          "issue": "2",
+          "pages": "302--318",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0006-324X"
+            }
+          ]
+        },
+        "year": "1995",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/65542"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/34572132"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 65542
+          },
+          {
+            "type": "bhl",
+            "id": 34572132
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T16:33:31+0000",
+            "url": "http:\/\/biostor.org\/reference\/65542.json"
+          }
+        },
+        "citation": "Luis A Ruedas (1995) Description of a new large-bodied species of Apomys Mearns, 1905 (Mammalia: Rodentia: Muridae) from Mindoro Island, Philippines. Proceedings of the Biological Society of Washington, 108(2): 302--318",
+        "thumbnail_url": "id\/biostor\/65542\/thumbnail\/image"
+      }
+    },
+    "2002": {
+      "biostor\/81423": {
+        "_id": "biostor\/81423",
+        "_rev": "1-40fae43651e9b31d2acb0501d43db2ca",
+        "author": [
+          {
+            "firstname": "E A",
+            "lastname": "Rickart",
+            "name": "E A Rickart"
+          },
+          {
+            "firstname": "L R",
+            "lastname": "Heaney",
+            "name": "L R Heaney"
+          }
+        ],
+        "type": "article",
+        "title": "Further Studies On The Chromosomes Of Philippine Rodents (Muridae : Murinae)",
+        "journal": {
+          "name": "Proceedings of The Biological Society of Washington",
+          "volume": "115",
+          "pages": "473--487",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0006-324X"
+            }
+          ]
+        },
+        "year": "2002",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/81423"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/35518840"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 81423
+          },
+          {
+            "type": "bhl",
+            "id": 35518840
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T17:25:14+0000",
+            "url": "http:\/\/biostor.org\/reference\/81423.json"
+          }
+        },
+        "citation": "E A Rickart, L R Heaney (2002) Further Studies On The Chromosomes Of Philippine Rodents (Muridae : Murinae). Proceedings of The Biological Society of Washington, 115: 473--487",
+        "geometry": {
+          "type": "MultiPoint",
+          "coordinates": [
+            [
+              124.31666666667,
+              13.783333333333
+            ],
+            [
+              123.3,
+              9.3
+            ],
+            [
+              124.85,
+              8.175
+            ],
+            [
+              121.07083333333,
+              17.441666666667
+            ],
+            [
+              121.075,
+              17.475
+            ],
+            [
+              124.85,
+              8.1583333333333
+            ]
+          ]
+        },
+        "thumbnail_url": "id\/biostor\/81423\/thumbnail\/image"
+      }
+    },
+    "2006": {
+      "biostor\/65879": {
+        "_id": "biostor\/65879",
+        "_rev": "1-fd1fb6618ccd1deb97a245142d0c11cf",
+        "author": [
+          {
+            "firstname": "Lawrence R",
+            "lastname": "Heaney",
+            "name": "Lawrence R Heaney"
+          },
+          {
+            "firstname": "Blas R",
+            "lastname": "Tabaranza",
+            "name": "Blas R Tabaranza"
+          },
+          {
+            "firstname": "Danilo S",
+            "lastname": "Balete",
+            "name": "Danilo S Balete"
+          },
+          {
+            "firstname": "Natalie",
+            "lastname": "Rigertas",
+            "name": "Natalie Rigertas"
+          }
+        ],
+        "type": "article",
+        "title": "Synopsis and Biogeography of the Mammals of Camiguin Island, Philippines",
+        "journal": {
+          "name": "Fieldiana Zoology",
+          "volume": "106",
+          "pages": "28--48",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0015-0754"
+            }
+          ]
+        },
+        "year": "2006",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/65879"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/2853545"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 65879
+          },
+          {
+            "type": "bhl",
+            "id": 2853545
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T17:25:11+0000",
+            "url": "http:\/\/biostor.org\/reference\/65879.json"
+          }
+        },
+        "citation": "Lawrence R Heaney, Blas R Tabaranza, Danilo S Balete, Natalie Rigertas (2006) Synopsis and Biogeography of the Mammals of Camiguin Island, Philippines. Fieldiana Zoology, 106: 28--48",
+        "thumbnail_url": "id\/biostor\/65879\/thumbnail\/image"
+      },
+      "biostor\/65896": {
+        "_id": "biostor\/65896",
+        "_rev": "1-85e09d1a9abb943b3e30608cbc12c875",
+        "author": [
+          {
+            "firstname": "L R",
+            "lastname": "Heaney",
+            "name": "L R Heaney"
+          },
+          {
+            "firstname": "Tabaranza",
+            "lastname": "Jr",
+            "name": "Tabaranza Jr"
+          },
+          {
+            "name": "B"
+          },
+          {
+            "firstname": "E A",
+            "lastname": "Rickart",
+            "name": "E A Rickart"
+          },
+          {
+            "firstname": "D S",
+            "lastname": "Balete",
+            "name": "D S Balete"
+          },
+          {
+            "firstname": "N R",
+            "lastname": "Ingle",
+            "name": "N R Ingle"
+          }
+        ],
+        "type": "article",
+        "title": "The Mammals of Mt. Kitanglad Nature Park, Mindanao, Philippines",
+        "journal": {
+          "name": "Fieldiana: Zoology",
+          "volume": "112",
+          "pages": "1--63",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0015-0754"
+            }
+          ]
+        },
+        "year": "2006",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/65896"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/2849316"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 65896
+          },
+          {
+            "type": "bhl",
+            "id": 2849316
+          },
+          {
+            "type": "doi",
+            "id": "10.3158\/0015-0754(2006)186[1:TMOMKN]2.0.CO;2"
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T17:25:07+0000",
+            "url": "http:\/\/biostor.org\/reference\/65896.json"
+          }
+        },
+        "citation": "L R Heaney, Tabaranza Jr, B, E A Rickart, D S Balete, N R Ingle (2006) The Mammals of Mt. Kitanglad Nature Park, Mindanao, Philippines. Fieldiana: Zoology, 112: 1--63",
+        "thumbnail_url": "id\/biostor\/65896\/thumbnail\/image"
+      },
+      "biostor\/65937": {
+        "_id": "biostor\/65937",
+        "_rev": "1-df486cc293d3a3c49be03b7d0f17fb89",
+        "author": [
+          {
+            "firstname": "L R",
+            "lastname": "Heaney",
+            "name": "L R Heaney"
+          },
+          {
+            "firstname": "B R",
+            "lastname": "Tabaranza",
+            "name": "B R Tabaranza"
+          }
+        ],
+        "type": "article",
+        "title": "A New Species of Forest Mouse, Genus Apomys (Mammalia: Rodentia: Muridae), from Camiguin Island, Philippines",
+        "journal": {
+          "name": "Fieldiana Zoology",
+          "volume": "106",
+          "pages": "14--27",
+          "identifier": [
+            {
+              "type": "issn",
+              "id": "0015-0754"
+            }
+          ]
+        },
+        "year": "2006",
+        "link": [
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/biostor.org\/reference\/65937"
+          },
+          {
+            "anchor": "LINK",
+            "url": "http:\/\/www.biodiversitylibrary.org\/page\/2853531"
+          }
+        ],
+        "identifier": [
+          {
+            "type": "biostor",
+            "id": 65937
+          },
+          {
+            "type": "bhl",
+            "id": 2853531
+          },
+          {
+            "type": "doi",
+            "id": "10.3158\/0015-0754(2006)106[14:ANSOFM]2.0.CO;2"
+          }
+        ],
+        "provenance": {
+          "biostor": {
+            "time": "2013-03-11T16:33:35+0000",
+            "url": "http:\/\/biostor.org\/reference\/65937.json"
+          }
+        },
+        "citation": "L R Heaney, B R Tabaranza (2006) A New Species of Forest Mouse, Genus Apomys (Mammalia: Rodentia: Muridae), from Camiguin Island, Philippines. Fieldiana Zoology, 106: 14--27",
+        "geometry": {
+          "type": "MultiPoint",
+          "coordinates": [
+            [
+              124.725,
+              9.1583333333333
+            ],
+            [
+              124.725,
+              9.1583333333333
+            ]
+          ]
+        },
+        "thumbnail_url": "id\/biostor\/65937\/thumbnail\/image"
+      }
+    }
+  }
+}
