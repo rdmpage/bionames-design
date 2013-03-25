@@ -18,7 +18,7 @@ var filterWidgets = {
             decade.exit().remove();
             
             var pubItems = decade.order().selectAll('.pub')
-                .data(function(d){ return d.values;}, function(d){ return d["_id"]; });
+                .data(function(d){ return d.values;}) // TODO add key back in when rod adds _id back into articles api, function(d){ return d["_id"]; });
 
             // Enter
             var pubItemsEnter = pubItems.enter().append('div')
@@ -27,7 +27,7 @@ var filterWidgets = {
             var thumbnail = pubItemsEnter.append("div")
                 .attr("class", 'thumbnail')
                 .append("img")
-                .attr("src", function(d){ return "http://bionames.org/bionames-api/" + d.thumbnail_url; })
+                .attr("src", function(d){ return (d.thumbnail_url) ? bionames.url(d.thumbnail_url) : ''; })
                 .attr("onload", "$(this).fadeIn();")
                 .style("display", "none");
 
@@ -40,7 +40,7 @@ var filterWidgets = {
             
             citation.append("div")
                 .attr("class", "meta")
-                .html(function(d){ return "<span class='authors'>"+ authorList(d.author) + "</span> <span class='j-sep'>in</span> <span class='journal'>"+( (d.journal) ? d.journal.name : '')+"</span> (<span class='year'>"+d.year+"</span>)"; });
+                .html(function(d){ return "<span class='authors'>"+ ((d.author) ? authorList(d.author) : "") + "</span> <span class='j-sep'>in</span> <span class='journal'>"+( (d.journal) ? d.journal.name : '')+"</span> (<span class='year'>"+d.year+"</span>)"; });
                 
             citation.select(".j-sep").style("display", function(d){ return (d.journal) ? "inline" : "none"; });
             
@@ -53,7 +53,7 @@ var filterWidgets = {
             
             function authorList(authors) {
                 return authors.map( function(author){
-                    return "<span class='author'>" + author.name + "</span>";
+                    return "<span class='author'>" + ((author.name) ? author.name : author) + "</span>";
                 }).join(", ");
             }
         }
@@ -77,7 +77,7 @@ var filterWidgets = {
     histogram: function() {
         var margin = { top: 10, right: 12, bottom: 20, left: 12 },
             xScale, // You must set with .xScale accessor. Note that the width of the chart is equal to the range
-            yScale = d3.scale.linear().rangeRound([80, 0]), // Sets a default chart height of 80, you can change it of course
+            yScale = d3.scale.linear().rangeRound([0, 80]), // Sets a default chart height of 80, you can change it of course
             id = this.histCount++,
             axis = d3.svg.axis().orient('bottom').tickFormat( d3.format("d") ),
             brush = d3.svg.brush(),
@@ -85,13 +85,16 @@ var filterWidgets = {
             dimension, // reference used by the brush to create the appropriate filter
             group, // provides the data for the histogram
             round, // allows the brush to "snap" to the bars in the chart
+            bucketSize = 1, // For calculating the bar width
             barMargin = 1; // Spacing in between bars
         
         // Draw or redraw a histogram into the div selector passed in as an argument
         function chart(div) {
             var w = xScale.range()[1];
             var h = d3.max( yScale.range() );
-            var barWidth = xScale( xScale.domain()[0] + 1 ) - xScale( xScale.domain()[0] ) - barMargin;
+            
+            // Calculate the bar width. We use the group here since it represents our bucket size
+            var barWidth = xScale( xScale.domain()[0] + bucketSize ) - xScale( xScale.domain()[0] ) - barMargin;
             
             yScale.domain([0, group.top(1)[0].value]);
             
@@ -152,11 +155,16 @@ var filterWidgets = {
                     .attr("x", function(d){ return xScale(d.key); });
         
                 // Update
-                b.attr("y", function(d){ return yScale(d.value); })
-                    .attr("height", function(d){ return h - yScale(d.value); });
+                b.attr("y", function(d){ return h - minHeight(yScale(d.value)); })
+                    .attr("height", function(d){ return minHeight(yScale(d.value)); });
         
                 // Exit
                 b.exit().remove();
+            }
+            
+            function minHeight(v){
+              var mH = 2;
+              return ( v < mH ) ? mH : v;
             }
             
             function resizeHandle(d) {
@@ -268,6 +276,13 @@ var filterWidgets = {
             round = r;
             return chart;
         };
+        
+        // For calculating the correct bar width for plots
+        chart.bucketSize = function(b) {
+          if(!arguments.length) return bucketSize;
+          bucketSize = b;
+          return chart;
+        }
         
         // Exposes the brush's event binding method onto the chart object
         d3.rebind(chart, brush, "on");

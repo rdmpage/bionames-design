@@ -19,37 +19,37 @@
 </head>
 <body>
    
-<div id="pubHistogram" class="chart"></div>
+<div id="yearHistogram">
+    <h2>Publications Per Year</h2>
+    <div class="chart"></div>
+</div>
+<div id="volumeHistogram">
+    <h2>Publications Per Volume</h2>
+    <div class="chart"></div>
+</div>
 <div id="pubList"></div>
     
 <script type="text/javascript" charset="utf-8">
 // These globals are just for ease of debugging
 // TODO make them local inside d3.json closure in production
 var pubs, publication_list;
-d3.json("data/rattus_publications.json", function(publications){
-    // stick publications into a global variable to make debugging easier
-    pubs = publications;
-    
-    // Denormalize Rod's handy dandy faceting into a flat list!
-    publication_list = [];
-    for( year in publications.years ) {
-        var pubs_by_year = publications.years[year];
-        
-        for( id in pubs_by_year ) {
-            var pub = pubs_by_year[id];
-            
-            // A little type coercion
-            pub.year = +pub.year; 
-            publication_list.push( pub );
-        }
-    }
+d3.json("data/zootaxa_articles.json", function(journal_articles){
+    // Some type coercion
+    journal_articles.articles.forEach(function(d){
+        d.year = +d.year;
+        d.volume = +d.volume;
+    });
     
     // Crossfilter, dimensions, and groups
-    var publication = crossfilter(publication_list),
+    /*var*/ publication = crossfilter(journal_articles.articles),
         year = publication.dimension(function(d){ return d.year; }),
-        years = year.group();
+        years = year.group(),
+        volume = publication.dimension(function(d){ return d.volume; }),
+        volumes = volume.group(function(v){ return Math.floor(v / 10) * 10; });
     
     var yearsExtent = d3.extent( years.all(), function(d){ return d.key; })
+    var volumesExtent = d3.extent( volumes.all(), function(d){ return d.key; })
+    
     
     // Nest operator for grouping the list by decade
     var nestByDecade = d3.nest()
@@ -64,6 +64,16 @@ d3.json("data/rattus_publications.json", function(publications){
             .xScale( d3.scale.linear()
                 .domain([ yearsExtent[0], yearsExtent[1]+1])
                 .rangeRound([0, 400])
+                .nice()),
+                
+        filterWidgets.histogram()
+            .dimension(volume)
+            .group(volumes)
+            .round( Math.floor )
+            .bucketSize(10)
+            .xScale( d3.scale.linear()
+                .domain([ volumesExtent[0], volumesExtent[1]+1])
+                .rangeRound([0, 800])
                 .nice())
     ];
     
