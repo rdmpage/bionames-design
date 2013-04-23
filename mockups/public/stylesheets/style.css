@@ -1,11 +1,43 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   color: #2e3033;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+/* for checking vertical rhythm */
+/*body{     
+    background-image: -webkit-linear-gradient(#f9f9f9 .05em, transparent .05em);
+    background-image:    -moz-linear-gradient(#f9f9f9 1px, transparent 1px);
+    background-image:     -ms-linear-gradient(#f9f9f9 1px, transparent 1px);
+    background-image:      -o-linear-gradient(#f9f9f9 1px, transparent 1px);
+    background-image:         linear-gradient(#f9f9f9 1px, transparent 1px);
+    background-size: 100% 20px;
+}*/
+
+
+/* Main content */
+.main-content {
+  background-color: #f1f1f1;
+}
+
+
+/* Sidebar */
+
+.sidebar-section {
+  border-bottom: 1px solid #e8f0f2;
+  padding: 20px 10px 19px 10px;
+}
+
+.sidebar-section h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.sidebar-section p {
+  color: #737880;
+}
 
 /* Publication Lists */
 .decadeYear {
@@ -13,8 +45,8 @@ body {
   padding-left: 10px;
   color: #bbbfc6;
   font-weight: 700;
-  line-height: 30px;  
-}
+/*  line-height: 30px;  
+*/}
 
 .pub {
   overflow: hidden; /* clearfix */
@@ -90,7 +122,7 @@ svg .axis .domain {
 }
         
 svg .axis text {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 svg .brush .extent {

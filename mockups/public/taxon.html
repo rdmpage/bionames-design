@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Taxon - Bionames</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+<!-- TODO scripts should go at the bottom of body -->
+
+<!-- External Libs -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<!-- Internal Libs -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="javascripts/lib/d3.js" type="text/javascript" charset="utf-8"></script>
+<script src="javascripts/lib/crossfilter.1.2.0.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Components -->
+<script src="javascripts/bionames.js" type="text/javascript" charset="utf-8"></script>
+<script src="javascripts/filter_widgets.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="index.html">BioNames</a>
+        </div>
+      </div>
+    </div>
+   
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="main-content span9">
+        <div class="page-header">
+            <h1>Genus specidae</h1>
+        </div>
+        <div id="original-description" class="original-description">
+            <h3>Original Description</h3>
+        </div>
+        <div id="publication-timeline" class="publication-timeline">
+            <h3>Publications</h3>
+            <div id="nameTimelines"></div>
+            <div id="pubList"></div>
+        </div>
+    </div>
+    <div class="sidebar span3">
+        <div class="sidebar-section">
+            <h3 class="taxonName">Genus specidae</h3>
+            <p><a href="#author">An author</a> and <a href="#author">Their crony</a></p>
+        </div>
+        <div class="sidebar-section">
+            <h3>Links</h3>
+            <p><a href="#eol" class="btn eol">EoL</a> <a href="#iphylo" class="btn iphylo">iPhylo</a> <a href="#iphylo" class="btn lsid">LSID</a></p>
+        </div>
+        <div class="sidebar-section">
+            <h3>Synonyms</h3>
+            <ul>
+                <li><a href="#">Genus specidoptera</a></li>
+                <li><a href="#">Genus specidon</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+
+$(function(){
+
+/* TODO the concept id should come in dynamically from PHP
+ *      and these URLs will need to change. 
+ */
+var concept  = 'taxon.gbif.2432611'
+var taxonUrl = 'data/' + concept + '.json';
+var pubUrl   = 'data/' + concept + '.publications.json';
+
+/* Load JSON data into variables */
+var taxon, publications;
+$.getJSON(taxonUrl, function(data){ taxon = data; });
+$.getJSON(pubUrl,   function(data){ 
+    publications = data;
+    buildTimeline(publications);
+});
+
+function buildTimeline(publications) {
+    var publication_list = publications.publications;
+    
+    // Clean up and type cast the JSON objects where necessary.
+    for(p in publication_list) {
+        pub = publication_list[p];
+        pub.year = +pub.year;
+    }
+    
+
+    // Crossfilter
+    // TODO use var here... just hard for debugging
+    pubs = crossfilter( d3.values(publications.publications) );
+    
+    // Dimensions and groups
+    pubsByYear = pubs.dimension( function(d){ return d.year; } );
+    years = pubsByYear.group();
+    pubsByName = pubs.dimension( function(d){ return d.tags[0]; } );
+    names = pubsByName.group();
+    
+    
+    // Nest for grouping publication list by decade
+    var nestByDecade = d3.nest().key(function(d){ return Math.floor(d.year/10) * 10; });
+    
+    
+    // Used to set the maximum domain of the y-axis of timelines
+    countMax = 0;
+    names.all().forEach(function(n){
+        var name = n.key,
+            maxForName;
+            
+        pubsByName.filter(name);
+        maxForName = d3.max(years.all(), function(v){ return v.value});
+        countMax = d3.max([countMax, maxForName]);
+    });
+    pubsByName.filterAll();
+    
+    // Used in the x-axis of timelines
+    var yearExtent = d3.extent( years.all(), function(d){ return d.key; } );
+    
+    // Crossfilter unfortunately does not support union filters, so we have to kind of build our own
+    // This set will keep track of which names have been selected with the checkboxes,
+    // and the unionNames function is used later to filter pubsByName by the selectedNames
+    var selectedNames = d3.set( names.all().map(function(d){ return d.key; }) );
+    var unionNames = function(d){ return selectedNames.has(d); };
+    
+    var xScale = d3.scale.linear()
+            .domain([ yearExtent[0], yearExtent[1]+1])
+            .rangeRound([0, 400])
+            .nice();
+    var yScale = d3.scale.linear().domain([0, countMax]).rangeRound([0, 60]);
+    
+    console.log("crikey")
+    
+    
+    var nameTimeline = d3.select("#nameTimelines").selectAll(".nameTimeline")
+        .data( names.all().map(function(d){ return d.key; }) ) 
+        .enter().append('div')
+            .attr('class', 'nameTimeline')
+                .append('div')
+                .attr('class', 'name');
+    
+    nameTimeline.append('input')
+        .attr({type: 'checkbox', checked: 'checked' })
+        .attr("id", function(d,i){ return "nameTimeline-check-" + i; })
+        .on('change', function(d){
+            this.checked ? selectedNames.add(d) : selectedNames.remove(d);
+            pubsByName.filter(unionNames);
+            renderAll();
+        });
+    
+    nameTimeline.append('label')
+        .attr("for", function(d,i){ return "nameTimeline-check-" + i; })
+        .text(function(d){ return d; });
+    
+    nameTimeline.append('div').attr("class", "chart")
+    
+    var charts = names.all().map(function(n){
+        var name = n.key;
+        return (filterWidgets.histogram()
+            .dimension(pubsByYear)
+            .group(years)
+            .filterGroup( function(){ pubsByName.filter(name); })
+            .round( Math.floor )
+            .xScale( xScale )
+            .yScale( yScale )
+        );
+    });
+    
+    var lists = [
+        filterWidgets.publicationList().dimension(pubsByYear).nest(nestByDecade)
+    ];
+    
+    
+    var chart = d3.selectAll(".nameTimeline .chart")
+        .data(charts)
+        .each(function(chart) {
+             chart.on("brush", function(c){
+                 charts.forEach(function(chrt){ chrt.filter(c.brush().extent())});
+                 renderAll()
+             }).on("brushend", renderAll); });
+        
+    var list = d3.selectAll("#pubList")
+        .data(lists);
+
+    function renderAll(){
+        list.each(render);
+        chart.each(render);
+    }
+
+    function render( method ) {
+        d3.select(this).call(method);
+    }
+
+    renderAll();
+}
+
+});
+
+</script> 
+</body>
+</html>

@@ -84,21 +84,20 @@ var filterWidgets = {
             needsRedraw, // a 'dirty' flag that lets us know to redraw the brush
             dimension, // reference used by the brush to create the appropriate filter
             group, // provides the data for the histogram
+            filterGroup, // A function used to filter the data in a group. For instance, filter the group of publications years, to one specific scientific name
             round, // allows the brush to "snap" to the bars in the chart
             bucketSize = 1, // For calculating the bar width
             barMargin = 1; // Spacing in between bars
         
         // Draw or redraw a histogram into the div selector passed in as an argument
-        function chart(div) {
+        function chart(selection) {
             var w = xScale.range()[1];
             var h = d3.max( yScale.range() );
             
             // Calculate the bar width. We use the group here since it represents our bucket size
             var barWidth = xScale( xScale.domain()[0] + bucketSize ) - xScale( xScale.domain()[0] ) - barMargin;
-            
-            yScale.domain([0, group.top(1)[0].value]);
-            
-            div.each(function(){
+                        
+            selection.each(function(){
                 var div = d3.select(this);
                 var g = div.select("g");
 
@@ -132,39 +131,36 @@ var filterWidgets = {
                         .attr("height", h);
                     theBrush.selectAll(".resize").append("path").attr('d', resizeHandle);
                     theBrush.selectAll(".resize").append("line").attr({ class: 'edge', x1: 1, y1: 0, x2: 1, y2: h });
+                    
+                    
+                    drawBars(g.select(".bars"));
                 }
                 
                 // needsRedraw is set when the domain or group is
                 // modified by an external agent. See #filter
                 if( needsRedraw ) {
-                    needsRedraw = false;
+                   needsRedraw = false;
                     g.selectAll(".brush").call(brush)
                 }
-                
-                drawBars(g.select(".bars").selectAll(".bar"));
             });
             
             
-            function drawBars(bars){
-                var b = bars.data(group.all());
+            function drawBars(barContainer){
+                if(filterGroup){ filterGroup(); }
+              
+                var b = barContainer.selectAll(".bar").data(group.all());
         
                 // Enter
                 b.enter().append("rect")
                     .attr("class", "bar")
                     .attr("width", barWidth)
                     .attr("x", function(d){ return xScale(d.key); });
-        
-                // Update
-                b.attr("y", function(d){ return h - minHeight(yScale(d.value)); })
-                    .attr("height", function(d){ return minHeight(yScale(d.value)); });
+                    
+                  b.attr("y", function(d){ return h - yScale(d.value); })
+                    .attr("height", function(d){ return yScale(d.value); });
         
                 // Exit
                 b.exit().remove();
-            }
-            
-            function minHeight(v){
-              var mH = 2;
-              return ( v < mH ) ? mH : v;
             }
             
             function resizeHandle(d) {
@@ -192,8 +188,9 @@ var filterWidgets = {
             // Snap to bars if round function is set
             if( round ) {
                 extent = brush.extent().map( round );
-                g.select(".brush").call( brush.extent(extent) );
             }
+            
+            g.select(".brush").call( brush.extent(extent) );
             
             dimension.filterRange( extent );
         });
@@ -202,12 +199,12 @@ var filterWidgets = {
           if (brush.empty()) {
             dimension.filterAll();
           } else {
-              if( round ) {
-                  var g = d3.select(this.parentNode);
-                  var extent = brush.extent();
-                  extent = brush.extent().map( round );
-                  g.select(".brush").call( brush.extent(extent) );
-              }
+            var g = d3.select(this.parentNode);
+            var extent = brush.extent();
+            if( round ) {
+              extent = brush.extent().map( round );
+            }
+            g.select(".brush").call( brush.extent(extent) );
           }
         });
         
@@ -244,14 +241,33 @@ var filterWidgets = {
             return chart;
         };
         
+        // Get/set filterGroup.
+        // This reference is used to filter the data shown in the bar chart
+        // Must pass in a function
+        chart.filterGroup = function(f){
+            if(!arguments.length) return filterGroup;
+            filterGroup = f;
+            return chart;
+        };
+        
+        chart.superFilter = function(f){
+          if(!arguments.length) return superFilter;
+          superFilter = f
+          return chart;
+        };
+        
+        
         // Filter the data in this chart to some range.
         // Allows an external agent to set or clear the brush and dimension
         // Passing no arguments clears any existing filters
         chart.filter = function(f){
             if(f){
+              console.log("Setting filter to "); 
+              console.log(f);
                 brush.extent(f);
                 dimension.filterRange(f);
             } else {
+              console.log("Clearing filter");
                 brush.clear();
                 dimension.filterAll();
             }
@@ -261,7 +277,8 @@ var filterWidgets = {
         };
         
         // Get/set the group, which provides the data for the histogram.
-        // You are required to set this, otherwise there won't be any data to chart
+        // You are required to set this or .data, otherwise there won't be any data to chart
+        // if both are set, it will default to .data
         chart.group = function(g){
             if(!arguments.length) return group;
             group = g;
@@ -282,6 +299,10 @@ var filterWidgets = {
           if(!arguments.length) return bucketSize;
           bucketSize = b;
           return chart;
+        }
+        
+        chart.brush =function(){
+          return brush;
         }
         
         // Exposes the brush's event binding method onto the chart object

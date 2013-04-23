@@ -1,0 +1,383 @@
+{
+  "status": 200,
+  "names": [
+    "Rhinolophus",
+    "Aquias",
+    "Rhynolophus",
+    "Rhinophyllotis",
+    "Rhinolphus",
+    "Rhinocrepis",
+    "Coelophyllus",
+    "Rhinomegalophus",
+    "Phyllotis",
+    "Euryalus",
+    "Phyllorhina",
+    "Rhinolophos"
+  ],
+  "publications": {
+    "biostor\/107030": {
+      "author": [
+        {
+          "firstname": "J V Barbosa Du",
+          "lastname": "Bocage",
+          "name": "J V Barbosa Du Bocage"
+        }
+      ],
+      "title": "Mammif\u00e8res d'Angola et du Congo",
+      "journal": {
+        "name": "Jornal de sciencias mathematicas, physicas e naturaes",
+        "series": "2",
+        "volume": "1",
+        "pages": "8--32",
+        "identifier": [
+          {
+            "type": "oclc",
+            "id": 181912037
+          }
+        ]
+      },
+      "year": "1889",
+      "thumbnail_url": "id\/biostor\/107030\/thumbnail\/image",
+      "tags": [
+        "Rhinolophus",
+        "Phyllorhina"
+      ]
+    },
+    "3102a7491ea1772ab26e241accbb72f4": {
+      "title": "Chiropteran notes",
+      "journal": {
+        "name": "Annali del Museo Civico di Storia Naturale Genova",
+        "volume": "3",
+        "pages": "473--478",
+        "identifier": [
+          {
+            "id": "0365-4389",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1907",
+      "thumbnail_url": "id\/3102a7491ea1772ab26e241accbb72f4\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Knud Andersen",
+          "firstname": "Knud",
+          "lastname": "Andersen"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "test3102a7491ea1772ab26e241accbb72f4": {
+      "title": "Chiropteran notes",
+      "journal": {
+        "name": "Annali del Museo Civico di Storia Naturale Genova",
+        "volume": "3",
+        "pages": "473--478",
+        "identifier": [
+          {
+            "id": "0365-4389",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1907",
+      "thumbnail_url": "id\/3102a7491ea1772ab26e241accbb72f4\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Knud Andersen",
+          "firstname": "Knud",
+          "lastname": "Andersen"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "5b54ea41b1bd6c7010b354ae8f140974": {
+      "title": "A review of Philippine land mammals in the United States National Museum",
+      "journal": {
+        "name": "Proceedings of the United States National Museum Smithsonian Institution Washington",
+        "volume": "46",
+        "pages": "299--341",
+        "identifier": [
+          {
+            "id": "0096-3801",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1913",
+      "author": [
+        {
+          "firstname": "Ned",
+          "lastname": "Hollister",
+          "name": "Ned Hollister"
+        }
+      ],
+      "thumbnail_url": "id\/5b54ea41b1bd6c7010b354ae8f140974\/thumbnail\/image",
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "48ea3da752378feb94ea663cbd95e07d": {
+      "title": "Collections from the Philippine Islands",
+      "journal": {
+        "name": "Bulletin Museum of Comparative Zoology Harvard",
+        "volume": "86",
+        "pages": "28--73",
+        "identifier": [
+          {
+            "id": "0027-4100",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1939",
+      "thumbnail_url": "id\/48ea3da752378feb94ea663cbd95e07d\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Thomas Barbour",
+          "firstname": "Thomas",
+          "lastname": "Barbour"
+        },
+        {
+          "name": "Barbara Lawrence",
+          "firstname": "Barbara",
+          "lastname": "Lawrence"
+        },
+        {
+          "name": "James L Peters",
+          "firstname": "James L",
+          "lastname": "Peters"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "21c8585cda29d741dadf6865fd438c85": {
+      "title": "The Gunong Benom Expedition 1967. 4. New records of Malayan bats, with taxonomic notes and the description of a new Pipistrellus",
+      "journal": {
+        "name": "Bulletin Br Mus nat Hist (Zool)",
+        "volume": "23",
+        "issue": "3",
+        "pages": "23--42",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1972",
+      "thumbnail_url": "id\/21c8585cda29d741dadf6865fd438c85\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "ab2e0def5e24b38064ae74d4230b2e67": {
+      "title": "Bats (Mammalia: Chiroptera) from Indo-Australia",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "45",
+        "issue": "3",
+        "pages": "103--208",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1983",
+      "thumbnail_url": "id\/ab2e0def5e24b38064ae74d4230b2e67\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "0d4850d8d9829d5aa63b2fe511568c6e": {
+      "title": "New bats (Mammalia: Chiroptera) and new records of bats from Borneo and Malaya",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "47",
+        "issue": "5",
+        "pages": "305--329",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1984",
+      "thumbnail_url": "id\/0d4850d8d9829d5aa63b2fe511568c6e\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        },
+        {
+          "name": "C M Francis",
+          "firstname": "C M",
+          "lastname": "Francis"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "160e947e2f9cc037d8d3355cf3bc1083": {
+      "title": "The baculum in the Vespertilioninae (Chiroptera: Vespertilionidae) with a systematic review, a synopsis of Pipistrellus and Eptesicus, and the descriptions of a new genus and subgenus",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "52",
+        "issue": "7",
+        "pages": "225--305",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1986",
+      "thumbnail_url": "id\/160e947e2f9cc037d8d3355cf3bc1083\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        },
+        {
+          "name": "D L Harrison",
+          "firstname": "D L",
+          "lastname": "Harrison"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "898b4b4a9a8e84ec0cfae8e7d47e6e9e": {
+      "title": "Die Chiroptera (Mammalia) aus dem Untermioz\u00e4n von Wintershof- West bei Eichst\u00e4tt (Bayern)",
+      "journal": {
+        "name": "Mitteilungen der Bayerischen Staatssammlung fuer Palaeontologie und Historische Geologie",
+        "volume": "33",
+        "pages": "119--154",
+        "identifier": [
+          {
+            "id": "0077-2070",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1993",
+      "thumbnail_url": "id\/898b4b4a9a8e84ec0cfae8e7d47e6e9e\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Reinhard Ziegler",
+          "firstname": "Reinhard",
+          "lastname": "Ziegler"
+        }
+      ],
+      "tags": [
+        "Rhinolophus"
+      ]
+    },
+    "03d0656036e1ee5fa180d83524dc36d9": {
+      "title": "New Bats and Rodents from S. America",
+      "journal": {
+        "name": "Ann Mag Nat Hist London ser 8",
+        "volume": "10",
+        "pages": "403--411",
+        "identifier": [
+          {
+            "id": "0374-5481",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1912",
+      "thumbnail_url": "id\/03d0656036e1ee5fa180d83524dc36d9\/thumbnail\/image",
+      "author": [
+        {
+          "firstname": "Oldfield",
+          "lastname": "Thomas",
+          "name": "Oldfield Thomas"
+        }
+      ],
+      "tags": [
+        "Phyllotis"
+      ]
+    },
+    "c129ee32937208c9068ec48c366b45dc": {
+      "title": "New mammals from Brazil and Peru",
+      "journal": {
+        "name": "Chicago Field Museum of Natural History Pub Zool Ser",
+        "volume": "10",
+        "pages": "187--198",
+        "identifier": [
+          {
+            "id": "0895-0237",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1915",
+      "author": [
+        {
+          "firstname": "Wilfred Hudson",
+          "lastname": "Osgood",
+          "name": "Wilfred Hudson Osgood"
+        }
+      ],
+      "thumbnail_url": "id\/c129ee32937208c9068ec48c366b45dc\/thumbnail\/image",
+      "tags": [
+        "Phyllotis"
+      ]
+    },
+    "34bb905c3ad429886dbee3d03eda9aa6": {
+      "title": "Mammals of the Collins-Day South American expedition",
+      "journal": {
+        "name": "Chicago Field Museum of Natural History Pub Zool Ser",
+        "volume": "10",
+        "pages": "199--216",
+        "identifier": [
+          {
+            "id": "0895-0237",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1916",
+      "author": [
+        {
+          "firstname": "Wilfred Hudson",
+          "lastname": "Osgood",
+          "name": "Wilfred Hudson Osgood"
+        }
+      ],
+      "thumbnail_url": "id\/34bb905c3ad429886dbee3d03eda9aa6\/thumbnail\/image",
+      "tags": [
+        "Phyllotis"
+      ]
+    }
+  }
+}
