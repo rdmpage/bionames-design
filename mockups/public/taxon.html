@@ -41,7 +41,11 @@
         </div>
         <div id="publication-timeline" class="publication-timeline">
             <h3>Publications</h3>
-            <div id="nameTimelines"></div>
+            <table id="synonymTimeline">
+                <thead><tr><td></td><td><div class="axis top"></div></td></tr></thead>
+                <tbody id="nameTimelines"></tbody>
+                <tfoot><tr><td></td><td><div class="axis bottom"></div></td></tr></thead>
+            </table>
             <div id="pubList"></div>
         </div>
     </div>
@@ -72,7 +76,7 @@ $(function(){
 /* TODO the concept id should come in dynamically from PHP
  *      and these URLs will need to change. 
  */
-var concept  = 'taxon.gbif.2432611'
+var concept  = 'taxon.gbif.2432854'
 var taxonUrl = 'data/' + concept + '.json';
 var pubUrl   = 'data/' + concept + '.publications.json';
 
@@ -85,24 +89,42 @@ $.getJSON(pubUrl,   function(data){
 });
 
 function buildTimeline(publications) {
-    var publication_list = publications.publications;
+    var publication_list = [];
     
     // Clean up and type cast the JSON objects where necessary.
-    for(p in publication_list) {
-        pub = publication_list[p];
-        pub.year = +pub.year;
+    for(var pubId in publications.publications) {
+        var pub = publications.publications[pubId];
+        
+        pub.year = +pub.year; // Cast to integer
+        pub.tags = pub.tags.sort();
+        
+        
+        // For each tag, we need to create a new object. Hacky I know, but 
+        // Crossfilter doesn't handle dimensions where an object can have multiple values
+        for(var t = 0; t < pub.tags.length; t++) {
+            var newPub = {};
+            
+            for(var prop in pub) {
+                newPub[prop] = pub[prop];
+            }
+            
+            newPub.tag  = pub.tags[t];
+            newPub["_id"] = pubId;
+            
+            publication_list.push(newPub);
+        }
     }
     
 
     // Crossfilter
     // TODO use var here... just hard for debugging
-    pubs = crossfilter( d3.values(publications.publications) );
+    var pubs = crossfilter( publication_list );
     
     // Dimensions and groups
-    pubsByYear = pubs.dimension( function(d){ return d.year; } );
-    years = pubsByYear.group();
-    pubsByName = pubs.dimension( function(d){ return d.tags[0]; } );
-    names = pubsByName.group();
+    var pubsByYear = pubs.dimension( function(d){ return d.year; } );
+    var years = pubsByYear.group();
+    var pubsByName = pubs.dimension( function(d){ return d.tag; } );
+    var names = pubsByName.group();
     
     
     // Nest for grouping publication list by decade
@@ -132,46 +154,49 @@ function buildTimeline(publications) {
     
     var xScale = d3.scale.linear()
             .domain([ yearExtent[0], yearExtent[1]+1])
-            .rangeRound([0, 400])
-            .nice();
-    var yScale = d3.scale.linear().domain([0, countMax]).rangeRound([0, 60]);
-    
-    console.log("crikey")
-    
+            .rangeRound([0, 600]);
+    var yScale = d3.scale.linear().domain([0, countMax]).rangeRound([0, 30]);
     
     var nameTimeline = d3.select("#nameTimelines").selectAll(".nameTimeline")
         .data( names.all().map(function(d){ return d.key; }) ) 
-        .enter().append('div')
+        .enter().append('tr')
             .attr('class', 'nameTimeline')
-                .append('div')
-                .attr('class', 'name');
     
-    nameTimeline.append('input')
+    var nameLabel = nameTimeline.append('td').append('label')
+    nameLabel.append('input')
         .attr({type: 'checkbox', checked: 'checked' })
-        .attr("id", function(d,i){ return "nameTimeline-check-" + i; })
         .on('change', function(d){
+            d3.select(this.parentNode.parentNode.parentNode).classed("disabled", !this.checked);
             this.checked ? selectedNames.add(d) : selectedNames.remove(d);
             pubsByName.filter(unionNames);
             renderAll();
         });
+    nameLabel.append('span').text(function(d){ return d; });
     
-    nameTimeline.append('label')
-        .attr("for", function(d,i){ return "nameTimeline-check-" + i; })
-        .text(function(d){ return d; });
-    
-    nameTimeline.append('div').attr("class", "chart")
+    nameTimeline.append('td').append('div').attr("class", "chart")
     
     var charts = names.all().map(function(n){
         var name = n.key;
         return (filterWidgets.histogram()
             .dimension(pubsByYear)
             .group(years)
-            .filterGroup( function(){ pubsByName.filter(name); })
+            .beforeDraw( function(){ pubsByName.filter(name); })
+            .afterDraw( function(){ pubsByName.filterAll(); })
             .round( Math.floor )
             .xScale( xScale )
             .yScale( yScale )
+            .margin({ top: 5, right: 12, bottom: 0, left: 12 })
         );
     });
+    
+    var axes = [
+        filterWidgets.axis()
+            .xScale( xScale )
+            .orient('top'),
+        filterWidgets.axis()
+            .xScale( xScale )
+            .orient('bottom')
+    ];
     
     var lists = [
         filterWidgets.publicationList().dimension(pubsByYear).nest(nestByDecade)
@@ -185,12 +210,16 @@ function buildTimeline(publications) {
                  charts.forEach(function(chrt){ chrt.filter(c.brush().extent())});
                  renderAll()
              }).on("brushend", renderAll); });
-        
+    
+    var axis = d3.selectAll(".axis")
+        .data(axes);
+    
     var list = d3.selectAll("#pubList")
         .data(lists);
 
     function renderAll(){
         list.each(render);
+        axis.each(render);
         chart.each(render);
     }
 

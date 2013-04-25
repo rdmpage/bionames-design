@@ -18,7 +18,7 @@ var filterWidgets = {
             decade.exit().remove();
             
             var pubItems = decade.order().selectAll('.pub')
-                .data(function(d){ return d.values;}) // TODO add key back in when rod adds _id back into articles api, function(d){ return d["_id"]; });
+                .data(function(d){ return d.values;}, function(d){ return d["_id"]; });
 
             // Enter
             var pubItemsEnter = pubItems.enter().append('div')
@@ -41,7 +41,11 @@ var filterWidgets = {
             citation.append("div")
                 .attr("class", "meta")
                 .html(function(d){ return "<span class='authors'>"+ ((d.author) ? authorList(d.author) : "") + "</span> <span class='j-sep'>in</span> <span class='journal'>"+( (d.journal) ? d.journal.name : '')+"</span> (<span class='year'>"+d.year+"</span>)"; });
-                
+            
+            citation.append("div")
+              .attr("class", "tags")
+              .html(function(d){ return tagList(d.tags); });
+            
             citation.select(".j-sep").style("display", function(d){ return (d.journal) ? "inline" : "none"; });
             
             // Update
@@ -52,9 +56,19 @@ var filterWidgets = {
             
             
             function authorList(authors) {
+              if( Array.isArray(authors) ){
                 return authors.map( function(author){
                     return "<span class='author'>" + ((author.name) ? author.name : author) + "</span>";
                 }).join(", ");
+              }
+            }
+            
+            function tagList(tags) {
+              if(Array.isArray(tags)) {
+                return tags.map(function(tag){
+                  return "<span class='tag'>" + tag + "</span>";
+                }).join(' ');
+              }
             }
         }
         
@@ -84,10 +98,12 @@ var filterWidgets = {
             needsRedraw, // a 'dirty' flag that lets us know to redraw the brush
             dimension, // reference used by the brush to create the appropriate filter
             group, // provides the data for the histogram
-            filterGroup, // A function used to filter the data in a group. For instance, filter the group of publications years, to one specific scientific name
+            beforeDraw, // A callback fired before the graph is drawn. Can be used to filter data that shows up in the graph
+            afterDraw, // ditto
             round, // allows the brush to "snap" to the bars in the chart
             bucketSize = 1, // For calculating the bar width
-            barMargin = 1; // Spacing in between bars
+            barMargin = 1, // Spacing in between bars
+            drawAxis = true;
         
         // Draw or redraw a histogram into the div selector passed in as an argument
         function chart(selection) {
@@ -103,6 +119,8 @@ var filterWidgets = {
 
                 // Create the plot elements if necessary
                 if( g.empty() ){
+                    div.style("height", h + margin.top + margin.bottom + "px");
+                    
                     g = div.append("svg")
                         .attr("width", w + margin.left + margin.right)
                         .attr("height", h + margin.top + margin.bottom)
@@ -133,7 +151,9 @@ var filterWidgets = {
                     theBrush.selectAll(".resize").append("line").attr({ class: 'edge', x1: 1, y1: 0, x2: 1, y2: h });
                     
                     
+                    if(beforeDraw){ beforeDraw(); }
                     drawBars(g.select(".bars"));
+                    if(afterDraw){ afterDraw(); }
                 }
                 
                 // needsRedraw is set when the domain or group is
@@ -145,9 +165,7 @@ var filterWidgets = {
             });
             
             
-            function drawBars(barContainer){
-                if(filterGroup){ filterGroup(); }
-              
+            function drawBars(barContainer){              
                 var b = barContainer.selectAll(".bar").data(group.all());
         
                 // Enter
@@ -166,16 +184,16 @@ var filterWidgets = {
             function resizeHandle(d) {
               var e = +(d == "e"),
                   x = e ? 1 : -1,
-                  y = h / 3;
+                  y = h / 4;
               return "M" + (.5 * x) + "," + y
                   + "A6,6 0 0 " + e + " " + (6.5 * x) + "," + (y + 6)
-                  + "V" + (2 * y - 6)
-                  + "A6,6 0 0 " + e + " " + (.5 * x) + "," + (2 * y)
+                  + "V" + (3 * y - 6)
+                  + "A6,6 0 0 " + e + " " + (.5 * x) + "," + (3 * y)
                   + "Z"
                   + "M" + (2.5 * x) + "," + (y + 8)
-                  + "V" + (2 * y - 8)
+                  + "V" + (3 * y - 8)
                   + "M" + (4.5 * x) + "," + (y + 8)
-                  + "V" + (2 * y - 8)
+                  + "V" + (3 * y - 8)
                   + "M" + (.5 * x) + "," + h
                   + "V0"; 
             }
@@ -241,12 +259,21 @@ var filterWidgets = {
             return chart;
         };
         
-        // Get/set filterGroup.
-        // This reference is used to filter the data shown in the bar chart
+        // Get/set beforeDraw.
+        // This is a callback fired before the chart is drawn. Could be used to filter the data drawn in the chart
         // Must pass in a function
-        chart.filterGroup = function(f){
-            if(!arguments.length) return filterGroup;
-            filterGroup = f;
+        chart.beforeDraw = function(f){
+            if(!arguments.length) return beforeDraw;
+            beforeDraw = f;
+            return chart;
+        };
+        
+        // Get/set afterDraw.
+        // This is a callback fired after the chart is drawn. 
+        // Must pass in a function
+        chart.afterDraw = function(f){
+            if(!arguments.length) return afterDraw;
+            afterDraw = f;
             return chart;
         };
         
@@ -262,12 +289,9 @@ var filterWidgets = {
         // Passing no arguments clears any existing filters
         chart.filter = function(f){
             if(f){
-              console.log("Setting filter to "); 
-              console.log(f);
                 brush.extent(f);
                 dimension.filterRange(f);
             } else {
-              console.log("Clearing filter");
                 brush.clear();
                 dimension.filterAll();
             }
@@ -305,9 +329,81 @@ var filterWidgets = {
           return brush;
         }
         
+        chart.drawAxis=function(b){
+          if(!arguments.length) return drawAxis;
+          drawAxis = b;
+          return chart;
+        }
+        
         // Exposes the brush's event binding method onto the chart object
         d3.rebind(chart, brush, "on");
 
         return chart;
+    },
+    
+    axis: function(){
+      var margin = { top: 0, right: 12, bottom: 0, left: 12 },
+          xScale, // You must set with .xScale accessor. Note that the width of the chart is equal to the range
+          orient = "bottom",
+          format = d3.format("d"),
+          
+          axis = d3.svg.axis();
+                  
+          
+          
+      // Draw or redraw a histogram into the div selector passed in as an argument
+      function theAxis(selection) {
+        var w = xScale.range()[1];
+        var h = 20;
+                
+        selection.each(function(){
+          var div = d3.select(this);
+          var g = div.select("g");
+
+          // Create the plot elements if necessary
+          if( g.empty() ){
+            var vTranslate = (orient === 'top') ? h : 1;
+          
+            axis.orient(orient).tickFormat(format).scale(xScale);
+            
+            div.style("height", h + margin.top + margin.bottom + "px");
+            
+            g = div.append("svg")
+               .attr("width", w + margin.left + margin.right)
+               .attr("height", h + margin.top + margin.bottom)
+             .append("g")
+               .attr("transform", "translate("+margin.left+","+margin.top+")");
+            
+            // Axis
+            g.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0,"+vTranslate+")")
+                .call(axis)
+              .append('line')
+                .attr('class', 'myDomain')
+                .attr({ x1: xScale.range()[0], y1: 0, x2: w, y2: 0});
+          } 
+        });
+      }
+      
+      theAxis.orient = function(o){
+        if(!arguments.length) return orient;
+        orient = o;
+        return theAxis;
+      }
+      
+      theAxis.format = function(f){
+        if(!arguments.length) return format;
+        format = f;
+        return theAxis;
+      }
+      
+      theAxis.xScale = function(s){
+        if(!arguments.length) return xScale;
+        xScale = s;
+        return theAxis;
+      }
+      
+      return theAxis;
     }
 };

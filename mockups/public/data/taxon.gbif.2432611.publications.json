@@ -69,32 +69,6 @@
         "Rhinolophus"
       ]
     },
-    "test3102a7491ea1772ab26e241accbb72f4": {
-      "title": "Chiropteran notes",
-      "journal": {
-        "name": "Annali del Museo Civico di Storia Naturale Genova",
-        "volume": "3",
-        "pages": "473--478",
-        "identifier": [
-          {
-            "id": "0365-4389",
-            "type": "issn"
-          }
-        ]
-      },
-      "year": "1907",
-      "thumbnail_url": "id\/3102a7491ea1772ab26e241accbb72f4\/thumbnail\/image",
-      "author": [
-        {
-          "name": "Knud Andersen",
-          "firstname": "Knud",
-          "lastname": "Andersen"
-        }
-      ],
-      "tags": [
-        "Rhinolophus"
-      ]
-    },
     "5b54ea41b1bd6c7010b354ae8f140974": {
       "title": "A review of Philippine land mammals in the United States National Museum",
       "journal": {
