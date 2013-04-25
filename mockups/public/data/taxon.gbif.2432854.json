@@ -1,0 +1,637 @@
+{
+  "_id": "gbif\/2432854",
+  "_rev": "5-0bf29e63699635af72e2fdb4bd9998a1",
+  "type": "taxonConcept",
+  "source": "http:\/\/ecat-dev.gbif.org\/checklist\/1",
+  "nameAccordingTo": "The Catalogue of Life, 3rd January 2011",
+  "sourceIdentifier": "2432854",
+  "scientificName": "Pteropus Brisson, 1762",
+  "taxonRank": "genus",
+  "canonicalName": "Pteropus",
+  "author": "Brisson, 1762",
+  "parent_id": "9367",
+  "children": [
+    {
+      "scientificName": "Pteropus admiralitatum Thomas, 1894",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus admiralitatum",
+      "author": "Thomas, 1894",
+      "sourceIdentifier": "5218676"
+    },
+    {
+      "scientificName": "Pteropus aldabrensis True, 1893",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus aldabrensis",
+      "author": "True, 1893",
+      "sourceIdentifier": "5218647"
+    },
+    {
+      "scientificName": "Pteropus alecto Temminck, 1837",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus alecto",
+      "author": "Temminck, 1837",
+      "sourceIdentifier": "5218686"
+    },
+    {
+      "scientificName": "Pteropus anetianus Gray, 1870",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus anetianus",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "5218677"
+    },
+    {
+      "scientificName": "Pteropus argentatus Gray, 1844",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus argentatus",
+      "author": "Gray, 1844",
+      "sourceIdentifier": "5218666"
+    },
+    {
+      "scientificName": "Pteropus aruensis Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus aruensis",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5707069"
+    },
+    {
+      "scientificName": "Pteropus banakrisi Richards & Hall, 2002",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus banakrisi",
+      "author": "Richards & Hall, 2002",
+      "sourceIdentifier": "5707060"
+    },
+    {
+      "scientificName": "Pteropus brunneus Dobson, 1878",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus brunneus",
+      "author": "Dobson, 1878",
+      "sourceIdentifier": "5218656"
+    },
+    {
+      "scientificName": "Pteropus caniceps Gray, 1870",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus caniceps",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "5218648"
+    },
+    {
+      "scientificName": "Pteropus capistratus Peters, 1876",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus capistratus",
+      "author": "Peters, 1876",
+      "sourceIdentifier": "6623463"
+    },
+    {
+      "scientificName": "Pteropus chrysoproctus Temminck, 1837",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus chrysoproctus",
+      "author": "Temminck, 1837",
+      "sourceIdentifier": "5218698"
+    },
+    {
+      "scientificName": "Pteropus cognatus K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus cognatus",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5706995"
+    },
+    {
+      "scientificName": "Pteropus conspicillatus Gould, 1850",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus conspicillatus",
+      "author": "Gould, 1850",
+      "sourceIdentifier": "5218680"
+    },
+    {
+      "scientificName": "Pteropus dasymallus Temminck, 1825",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus dasymallus",
+      "author": "Temminck, 1825",
+      "sourceIdentifier": "5218670"
+    },
+    {
+      "scientificName": "Pteropus faunulus Miller, 1902",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus faunulus",
+      "author": "Miller, 1902",
+      "sourceIdentifier": "5218660"
+    },
+    {
+      "scientificName": "Pteropus fundatus Felten & Kock, 1972",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus fundatus",
+      "author": "Felten & Kock, 1972",
+      "sourceIdentifier": "5218651"
+    },
+    {
+      "scientificName": "Pteropus giganteus (Br\u00fcnnich, 1782)",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus giganteus",
+      "author": "(Br\u00fcnnich, 1782)",
+      "sourceIdentifier": "5218642"
+    },
+    {
+      "scientificName": "Pteropus gilliardi Van Deusen, 1969",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus gilliardi",
+      "author": "Van Deusen, 1969",
+      "sourceIdentifier": "5218692"
+    },
+    {
+      "scientificName": "Pteropus gilliardorum Van Deusen, 1969",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus gilliardorum",
+      "author": "Van Deusen, 1969",
+      "sourceIdentifier": "5707059"
+    },
+    {
+      "scientificName": "Pteropus griseus (E. Geoffroy, 1810)",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus griseus",
+      "author": "(E. Geoffroy, 1810)",
+      "sourceIdentifier": "5218683"
+    },
+    {
+      "scientificName": "Pteropus howensis Troughton, 1931",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus howensis",
+      "author": "Troughton, 1931",
+      "sourceIdentifier": "5218672"
+    },
+    {
+      "scientificName": "Pteropus hypomelanus Temminck, 1853",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus hypomelanus",
+      "author": "Temminck, 1853",
+      "sourceIdentifier": "5218662"
+    },
+    {
+      "scientificName": "Pteropus insularis Hombron & Jacquinot, 1842",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus insularis",
+      "author": "Hombron & Jacquinot, 1842",
+      "sourceIdentifier": "5218665"
+    },
+    {
+      "scientificName": "Pteropus intermedius K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus intermedius",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5707057"
+    },
+    {
+      "scientificName": "Pteropus keyensis Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus keyensis",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5707051"
+    },
+    {
+      "scientificName": "Pteropus leucopterus Temminck, 1853",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus leucopterus",
+      "author": "Temminck, 1853",
+      "sourceIdentifier": "5218654"
+    },
+    {
+      "scientificName": "Pteropus livingstonii Gray, 1866",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus livingstonii",
+      "author": "Gray, 1866",
+      "sourceIdentifier": "5218694"
+    },
+    {
+      "scientificName": "Pteropus lombocensis Dobson, 1878",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus lombocensis",
+      "author": "Dobson, 1878",
+      "sourceIdentifier": "5218687"
+    },
+    {
+      "scientificName": "Pteropus loochoensis Gray, 1870",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus loochoensis",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "5706998"
+    },
+    {
+      "scientificName": "Pteropus lylei K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus lylei",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5218678"
+    },
+    {
+      "scientificName": "Pteropus macrotis Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus macrotis",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5218667"
+    },
+    {
+      "scientificName": "Pteropus mahaganus Sanborn, 1931",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus mahaganus",
+      "author": "Sanborn, 1931",
+      "sourceIdentifier": "5218657"
+    },
+    {
+      "scientificName": "Pteropus mariannus Desmarest, 1822",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus mariannus",
+      "author": "Desmarest, 1822",
+      "sourceIdentifier": "5218697"
+    },
+    {
+      "scientificName": "Pteropus mearnsi Hollister, 1913",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus mearnsi",
+      "author": "Hollister, 1913",
+      "sourceIdentifier": "5218699"
+    },
+    {
+      "scientificName": "Pteropus melanopogon Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus melanopogon",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5218690"
+    },
+    {
+      "scientificName": "Pteropus melanotus Blyth, 1863",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus melanotus",
+      "author": "Blyth, 1863",
+      "sourceIdentifier": "5218681"
+    },
+    {
+      "scientificName": "Pteropus molossinus Temminck, 1853",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus molossinus",
+      "author": "Temminck, 1853",
+      "sourceIdentifier": "5218689"
+    },
+    {
+      "scientificName": "Pteropus neohibernicus Peters, 1876",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus neohibernicus",
+      "author": "Peters, 1876",
+      "sourceIdentifier": "5218671"
+    },
+    {
+      "scientificName": "Pteropus niger (Kerr, 1792)",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus niger",
+      "author": "(Kerr, 1792)",
+      "sourceIdentifier": "5218652"
+    },
+    {
+      "scientificName": "Pteropus nitendiensis Sanborn, 1930",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus nitendiensis",
+      "author": "Sanborn, 1930",
+      "sourceIdentifier": "5218643"
+    },
+    {
+      "scientificName": "Pteropus ocularis Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus ocularis",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5218693"
+    },
+    {
+      "scientificName": "Pteropus ornatus Gray, 1870",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus ornatus",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "5218684"
+    },
+    {
+      "scientificName": "Pteropus pelewensis K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus pelewensis",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5706984"
+    },
+    {
+      "scientificName": "Pteropus personatus Temminck, 1825",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus personatus",
+      "author": "Temminck, 1825",
+      "sourceIdentifier": "5218674"
+    },
+    {
+      "scientificName": "Pteropus phaeocephalus Thomas, 1882",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus phaeocephalus",
+      "author": "Thomas, 1882",
+      "sourceIdentifier": "5218679"
+    },
+    {
+      "scientificName": "Pteropus pilosus K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus pilosus",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5218669"
+    },
+    {
+      "scientificName": "Pteropus pohlei Stein, 1933",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus pohlei",
+      "author": "Stein, 1933",
+      "sourceIdentifier": "5218663"
+    },
+    {
+      "scientificName": "Pteropus poliocephalus Temminck, 1825",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus poliocephalus",
+      "author": "Temminck, 1825",
+      "sourceIdentifier": "5218655"
+    },
+    {
+      "scientificName": "Pteropus pselaphon Lay, 1829",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus pselaphon",
+      "author": "Lay, 1829",
+      "sourceIdentifier": "5218646"
+    },
+    {
+      "scientificName": "Pteropus pumilus Miller, 1911",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus pumilus",
+      "author": "Miller, 1911",
+      "sourceIdentifier": "5218696"
+    },
+    {
+      "scientificName": "Pteropus rayneri Gray, 1870",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus rayneri",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "5218688"
+    },
+    {
+      "scientificName": "Pteropus rennelli Troughton, 1929",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus rennelli",
+      "author": "Troughton, 1929",
+      "sourceIdentifier": "5707082"
+    },
+    {
+      "scientificName": "Pteropus rodricensis Dobson, 1878",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus rodricensis",
+      "author": "Dobson, 1878",
+      "sourceIdentifier": "5218645"
+    },
+    {
+      "scientificName": "Pteropus rufus Tiedemann, 1808",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus rufus",
+      "author": "Tiedemann, 1808",
+      "sourceIdentifier": "5218668"
+    },
+    {
+      "scientificName": "Pteropus samoensis Peale, 1848",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus samoensis",
+      "author": "Peale, 1848",
+      "sourceIdentifier": "5218659"
+    },
+    {
+      "scientificName": "Pteropus sanctacrucis Troughton, 1930",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus sanctacrucis",
+      "author": "Troughton, 1930",
+      "sourceIdentifier": "5218658"
+    },
+    {
+      "scientificName": "Pteropus scapulatus Peters, 1862",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus scapulatus",
+      "author": "Peters, 1862",
+      "sourceIdentifier": "5218649"
+    },
+    {
+      "scientificName": "Pteropus seychellensis Milne-Edwards, 1877",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus seychellensis",
+      "author": "Milne-Edwards, 1877",
+      "sourceIdentifier": "5218700"
+    },
+    {
+      "scientificName": "Pteropus speciosus K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus speciosus",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5218691"
+    },
+    {
+      "scientificName": "Pteropus subniger (Kerr, 1792)",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus subniger",
+      "author": "(Kerr, 1792)",
+      "sourceIdentifier": "5218682"
+    },
+    {
+      "scientificName": "Pteropus temmincki Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus temmincki",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5218661"
+    },
+    {
+      "scientificName": "Pteropus temminckii Peters, 1867",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus temminckii",
+      "author": "Peters, 1867",
+      "sourceIdentifier": "5706990"
+    },
+    {
+      "scientificName": "Pteropus tokudae Tate, 1934",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus tokudae",
+      "author": "Tate, 1934",
+      "sourceIdentifier": "5218650"
+    },
+    {
+      "scientificName": "Pteropus tonganus Quoy & Gaimard, 1830",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus tonganus",
+      "author": "Quoy & Gaimard, 1830",
+      "sourceIdentifier": "5218673"
+    },
+    {
+      "scientificName": "Pteropus tuberculatus Peters, 1869",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus tuberculatus",
+      "author": "Peters, 1869",
+      "sourceIdentifier": "5218653"
+    },
+    {
+      "scientificName": "Pteropus ualanus Peters, 1883",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus ualanus",
+      "author": "Peters, 1883",
+      "sourceIdentifier": "5707023"
+    },
+    {
+      "scientificName": "Pteropus vampyrus (Linnaeus, 1758)",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus vampyrus",
+      "author": "(Linnaeus, 1758)",
+      "sourceIdentifier": "5218644"
+    },
+    {
+      "scientificName": "Pteropus vetulus Jouan, 1863",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus vetulus",
+      "author": "Jouan, 1863",
+      "sourceIdentifier": "5218685"
+    },
+    {
+      "scientificName": "Pteropus voeltzkowi Matschie, 1909",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus voeltzkowi",
+      "author": "Matschie, 1909",
+      "sourceIdentifier": "5218675"
+    },
+    {
+      "scientificName": "Pteropus woodfordi Thomas, 1888",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus woodfordi",
+      "author": "Thomas, 1888",
+      "sourceIdentifier": "5218664"
+    },
+    {
+      "scientificName": "Pteropus yapensis K. Andersen, 1908",
+      "taxonRank": "species",
+      "canonicalName": "Pteropus yapensis",
+      "author": "K. Andersen, 1908",
+      "sourceIdentifier": "5707035"
+    }
+  ],
+  "ancestors": [
+    {
+      "sourceIdentifier": "1",
+      "scientificName": "Animalia",
+      "taxonRank": "kingdom",
+      "canonicalName": "Animalia"
+    },
+    {
+      "sourceIdentifier": "44",
+      "scientificName": "Chordata",
+      "taxonRank": "phylum",
+      "canonicalName": "Chordata"
+    },
+    {
+      "sourceIdentifier": "359",
+      "scientificName": "Mammalia Linnaeus, 1758",
+      "taxonRank": "class",
+      "canonicalName": "Mammalia",
+      "author": "Linnaeus, 1758"
+    },
+    {
+      "sourceIdentifier": "734",
+      "scientificName": "Chiroptera Blumenbach, 1779",
+      "taxonRank": "order",
+      "canonicalName": "Chiroptera",
+      "author": "Blumenbach, 1779"
+    },
+    {
+      "sourceIdentifier": "9367",
+      "scientificName": "Pteropodidae Gray, 1821",
+      "taxonRank": "family",
+      "canonicalName": "Pteropodidae",
+      "author": "Gray, 1821"
+    }
+  ],
+  "synonyms": [
+    {
+      "scientificName": "Desmalopex Miller, 1907",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Desmalopex",
+      "author": "Miller, 1907",
+      "sourceIdentifier": "4832011"
+    },
+    {
+      "scientificName": "Pselaphon Gray, 1870",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Pselaphon",
+      "author": "Gray, 1870",
+      "sourceIdentifier": "4832012"
+    },
+    {
+      "scientificName": "Sericonycteris Matschie, 1899",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Sericonycteris",
+      "author": "Matschie, 1899",
+      "sourceIdentifier": "4832006"
+    },
+    {
+      "scientificName": "Eunycteris Gray, 1866",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Eunycteris",
+      "author": "Gray, 1866",
+      "sourceIdentifier": "4832013"
+    },
+    {
+      "scientificName": "Reropus Hauch, 1827",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Reropus",
+      "author": "Hauch, 1827",
+      "sourceIdentifier": "4832010"
+    },
+    {
+      "scientificName": "Pharopus Bowdich, 1825",
+      "taxonRank": "genus",
+      "nameAccordingTo": "Interim Register of Marine and Nonmarine Genera",
+      "canonicalName": "Pharopus",
+      "author": "Bowdich, 1825",
+      "sourceIdentifier": "4832008"
+    },
+    {
+      "scientificName": "Spectrum Lacep\u00e8de, 1799",
+      "taxonRank": "genus",
+      "nameAccordingTo": "IRMNG Homonym List",
+      "canonicalName": "Spectrum",
+      "author": "Lacep\u00e8de, 1799",
+      "sourceIdentifier": "6006386"
+    }
+  ],
+  "status": 200,
+  "identifier": {
+    "ion": {
+      "2014979": {
+        "nameComplete": "Desmalopex",
+        "taxonAuthor": "Miller 1907",
+        "publication": [
+          "Miller 1907. The families and genera of Bats. Washington DC Smithsonian Institution U S National Museum Bulletin, No. 57 1907: (xvii+282)"
+        ],
+        "publishedInCitation": [
+          "9e842f089e0976d9982851948da8fe1e"
+        ],
+        "year": [
+          "1907"
+        ]
+      },
+      "391313": {
+        "nameComplete": "Pteropus",
+        "taxonAuthor": "Brisson 1762"
+      },
+      "4331071": {
+        "nameComplete": "Sericonycteris"
+      },
+      "4516787": {
+        "nameComplete": "Spectrum",
+        "taxonAuthor": "de Lacepede 1799"
+      }
+    },
+    "eol": [
+      "15607"
+    ]
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "status": 200,
+  "names": [
+    "Pteropus",
+    "Desmalopex",
+    "Pselaphon",
+    "Sericonycteris",
+    "Eunycteris",
+    "Reropus",
+    "Pharopus",
+    "Spectrum"
+  ],
+  "publications": {
+    "058a9c3a9c89430581e873ab26fd3ada": {
+      "_id": "058a9c3a9c89430581e873ab26fd3ada",
+      "journal": {
+        "name": "Monatsberichte Akad Wiss Berlin"
+      },
+      "year": "1867",
+      "thumbnail_url": "id\/058a9c3a9c89430581e873ab26fd3ada\/thumbnail\/image",
+      "title": "\u00dcber Flederthiere und Amphibien",
+      "author": [
+        {
+          "name": "W Peters",
+          "firstname": "W",
+          "lastname": "Peters"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "c16f0a33ec6d06e3794cc2d4d2027329": {
+      "_id": "c16f0a33ec6d06e3794cc2d4d2027329",
+      "title": "Notes on the bats of the Seychelles group of islands",
+      "journal": {
+        "name": "Annals & Magazine of Natural History",
+        "volume": "ii",
+        "pages": "436--438",
+        "identifier": [
+          {
+            "id": "0374-5481",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1868",
+      "thumbnail_url": "id\/c16f0a33ec6d06e3794cc2d4d2027329\/thumbnail\/image",
+      "author": [
+        {
+          "firstname": "Ed Perceval",
+          "lastname": "Wright",
+          "name": "Ed Perceval Wright"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "161fc11b4e693635f8af79bd051ef227": {
+      "_id": "161fc11b4e693635f8af79bd051ef227",
+      "journal": {
+        "name": "Proceedings of the Zoological Society",
+        "identifier": [
+          {
+            "id": "0370-2774",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1878",
+      "thumbnail_url": "id\/161fc11b4e693635f8af79bd051ef227\/thumbnail\/image",
+      "title": "Notes on recent additions to the collection of Chiroptera in the Museum d'Histoire Naturelle at Paris, with descriptions of new and rare species",
+      "author": [
+        {
+          "name": "G E Dobson",
+          "firstname": "G E",
+          "lastname": "Dobson"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "cc98b99e4cd9e8655a53a553355a6d52": {
+      "_id": "cc98b99e4cd9e8655a53a553355a6d52",
+      "journal": {
+        "name": "Bulletin de la Societe Philomathique",
+        "volume": "ii",
+        "identifier": [
+          {
+            "id": "0366-3515",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1879",
+      "thumbnail_url": "id\/cc98b99e4cd9e8655a53a553355a6d52\/thumbnail\/image",
+      "title": "Observations sur les Chauves-Souris des \u00eeles Seychelles",
+      "author": [
+        {
+          "name": "A Milne-Edwards",
+          "firstname": "A",
+          "lastname": "Milne-Edwards"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "4f4a1edfffeea4386a128654ea7c17da": {
+      "_id": "4f4a1edfffeea4386a128654ea7c17da",
+      "journal": {
+        "name": "Proceedings of the Zoological Society",
+        "identifier": [
+          {
+            "id": "0370-2774",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1882",
+      "author": [
+        {
+          "firstname": "Oldfield",
+          "lastname": "Thomas",
+          "name": "Oldfield Thomas"
+        }
+      ],
+      "thumbnail_url": "id\/4f4a1edfffeea4386a128654ea7c17da\/thumbnail\/image",
+      "title": "Description of two new Species of Pteropus from the Caroline Islands",
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "e47457cdffff3b1759e6e71739d72d72": {
+      "_id": "e47457cdffff3b1759e6e71739d72d72",
+      "title": "\u00dcber die von Herrn Dr. Finsch von den Carolinen-Inseln eingesandten Flederhunde",
+      "journal": {
+        "name": "Sitzungsberichte Nat Fr",
+        "volume": "1883",
+        "pages": "1",
+        "identifier": [
+          {
+            "id": "0037-5942",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1883",
+      "thumbnail_url": "id\/e47457cdffff3b1759e6e71739d72d72\/thumbnail\/image",
+      "author": [
+        {
+          "name": "W Peters",
+          "firstname": "W",
+          "lastname": "Peters"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "76ac39fb163eb45f802e46f0b9d2ca91": {
+      "_id": "76ac39fb163eb45f802e46f0b9d2ca91",
+      "journal": {
+        "name": "Proceedings of the Zoological Society",
+        "identifier": [
+          {
+            "id": "0370-2774",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1887",
+      "author": [
+        {
+          "firstname": "By Oldfield",
+          "lastname": "Thomas.",
+          "name": "By Oldfield Thomas."
+        }
+      ],
+      "thumbnail_url": "id\/76ac39fb163eb45f802e46f0b9d2ca91\/thumbnail\/image",
+      "title": "I. MAMMALIA",
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "9a21995bf13738590308dc1ab50256d4": {
+      "_id": "9a21995bf13738590308dc1ab50256d4",
+      "journal": {
+        "name": "Proceedings of the Zoological Society",
+        "identifier": [
+          {
+            "id": "0370-2774",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1888",
+      "author": [
+        {
+          "firstname": "Oldfield",
+          "lastname": "Thomas",
+          "name": "Oldfield Thomas"
+        }
+      ],
+      "thumbnail_url": "id\/9a21995bf13738590308dc1ab50256d4\/thumbnail\/image",
+      "title": "The Mammals of the Solomon Islands, based on the Collections made by Mr. C. M. Woodford during his Second Expedition to the Archipelago",
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "biostor\/107030": {
+      "_id": "biostor\/107030",
+      "author": [
+        {
+          "firstname": "J V Barbosa Du",
+          "lastname": "Bocage",
+          "name": "J V Barbosa Du Bocage"
+        }
+      ],
+      "title": "Mammif\u00e8res d'Angola et du Congo",
+      "journal": {
+        "name": "Jornal de sciencias mathematicas, physicas e naturaes",
+        "series": "2",
+        "volume": "1",
+        "pages": "8--32",
+        "identifier": [
+          {
+            "type": "oclc",
+            "id": 181912037
+          }
+        ]
+      },
+      "year": "1889",
+      "thumbnail_url": "id\/biostor\/107030\/thumbnail\/image",
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "b50b7eed1b1bee1a1e00813bf4240646": {
+      "_id": "b50b7eed1b1bee1a1e00813bf4240646",
+      "journal": {
+        "name": "Annali del Museo Genova",
+        "volume": "xiv",
+        "identifier": [
+          {
+            "id": "0365-4389",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1895",
+      "thumbnail_url": "id\/b50b7eed1b1bee1a1e00813bf4240646\/thumbnail\/image",
+      "title": "On some Mammals from Engano Island, West of Sumatra",
+      "author": [
+        {
+          "name": "Oldfield Thomas",
+          "firstname": "Oldfield",
+          "lastname": "Thomas"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "20bbec586ed91e1a1b7abefba13fc54e": {
+      "_id": "20bbec586ed91e1a1b7abefba13fc54e",
+      "journal": {
+        "identifier": [
+          {
+            "id": "0433-8731",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1899",
+      "author": [
+        {
+          "firstname": "Paul",
+          "lastname": "Matschie",
+          "name": "Paul Matschie"
+        }
+      ],
+      "thumbnail_url": "id\/20bbec586ed91e1a1b7abefba13fc54e\/thumbnail\/image",
+      "title": "Die Flederm\u00e4use des Berliner Museums f\u00fcr Naturkunde",
+      "tags": [
+        "Pteropus",
+        "Sericonycteris",
+        "Eunycteris"
+      ]
+    },
+    "407a70a7324ccde260fb2347096e151c": {
+      "_id": "407a70a7324ccde260fb2347096e151c",
+      "title": "On an extinct undescribed Fruit-Bat of the genus Pteropus from the Mascarenes",
+      "journal": {
+        "name": "Annals & Magazine of Natural History Series 7",
+        "volume": "20",
+        "pages": "220--222",
+        "identifier": [
+          {
+            "id": "0374-5481",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1907",
+      "thumbnail_url": "id\/407a70a7324ccde260fb2347096e151c\/thumbnail\/image",
+      "author": [
+        {
+          "firstname": "E",
+          "lastname": "Mason",
+          "name": "E Mason"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "7d7a548f2f2d4bf04e9d938240789f4a": {
+      "_id": "7d7a548f2f2d4bf04e9d938240789f4a",
+      "title": "On Pterocyon, Rousettus and Myonycteris",
+      "journal": {
+        "name": "Annals & Magazine of Natural History Series 7",
+        "volume": "19",
+        "pages": "501--515",
+        "identifier": [
+          {
+            "id": "0374-5481",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1907",
+      "thumbnail_url": "id\/7d7a548f2f2d4bf04e9d938240789f4a\/thumbnail\/image",
+      "author": [
+        {
+          "firstname": "Kund",
+          "lastname": "Andersen",
+          "name": "Kund Andersen"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "9e842f089e0976d9982851948da8fe1e": {
+      "_id": "9e842f089e0976d9982851948da8fe1e",
+      "title": "The families and genera of bats",
+      "journal": {
+        "name": "Washington DC Smithsonian Institution U S National Museum Bulletin",
+        "volume": "57",
+        "pages": "1--282",
+        "identifier": [
+          {
+            "id": "0096-2961",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1907",
+      "thumbnail_url": "id\/9e842f089e0976d9982851948da8fe1e\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Gerrit S Miller",
+          "firstname": "Gerrit S",
+          "lastname": "Miller"
+        }
+      ],
+      "tags": [
+        "Pteropus",
+        "Desmalopex",
+        "Pselaphon",
+        "Sericonycteris",
+        "Eunycteris"
+      ]
+    },
+    "f0c92bb2b8e1cfc7ed265047f1379576": {
+      "_id": "f0c92bb2b8e1cfc7ed265047f1379576",
+      "title": "Catalogue of the Chiroptera In the collection of the British Museum. Volume I: Megachiroptera",
+      "journal": {
+        "name": "Megachiroptera.",
+        "volume": "London,"
+      },
+      "year": "1912",
+      "author": [
+        {
+          "firstname": "Knud",
+          "lastname": "Andersen",
+          "name": "Knud Andersen"
+        },
+        {
+          "firstname": "George Edward",
+          "lastname": "Dobson",
+          "name": "George Edward Dobson"
+        }
+      ],
+      "thumbnail_url": "id\/f0c92bb2b8e1cfc7ed265047f1379576\/thumbnail\/image",
+      "tags": [
+        "Pteropus",
+        "Desmalopex",
+        "Pselaphon",
+        "Sericonycteris",
+        "Eunycteris"
+      ]
+    },
+    "5b54ea41b1bd6c7010b354ae8f140974": {
+      "_id": "5b54ea41b1bd6c7010b354ae8f140974",
+      "title": "A review of Philippine land mammals in the United States National Museum",
+      "journal": {
+        "name": "Proceedings of the United States National Museum Smithsonian Institution Washington",
+        "volume": "46",
+        "pages": "299--341",
+        "identifier": [
+          {
+            "id": "0096-3801",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1913",
+      "author": [
+        {
+          "firstname": "Ned",
+          "lastname": "Hollister",
+          "name": "Ned Hollister"
+        }
+      ],
+      "thumbnail_url": "id\/5b54ea41b1bd6c7010b354ae8f140974\/thumbnail\/image",
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "43f86b8ebcd98d7912edffc50094da8e": {
+      "_id": "43f86b8ebcd98d7912edffc50094da8e",
+      "title": "Three new bats of the genera Pteropus, Nyctimene, and Chaerephon from Melanesia",
+      "journal": {
+        "name": "Proceedings of the Linnean Society of New South Wales",
+        "volume": "56",
+        "pages": "204--209",
+        "identifier": [
+          {
+            "id": "0370-047X",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1931",
+      "thumbnail_url": "id\/43f86b8ebcd98d7912edffc50094da8e\/thumbnail\/image",
+      "author": [
+        {
+          "name": "E Le G Troughton",
+          "firstname": "E Le G",
+          "lastname": "Troughton"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "48ea3da752378feb94ea663cbd95e07d": {
+      "_id": "48ea3da752378feb94ea663cbd95e07d",
+      "title": "Collections from the Philippine Islands",
+      "journal": {
+        "name": "Bulletin Museum of Comparative Zoology Harvard",
+        "volume": "86",
+        "pages": "28--73",
+        "identifier": [
+          {
+            "id": "0027-4100",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1939",
+      "thumbnail_url": "id\/48ea3da752378feb94ea663cbd95e07d\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Thomas Barbour",
+          "firstname": "Thomas",
+          "lastname": "Barbour"
+        },
+        {
+          "name": "Barbara Lawrence",
+          "firstname": "Barbara",
+          "lastname": "Lawrence"
+        },
+        {
+          "name": "James L Peters",
+          "firstname": "James L",
+          "lastname": "Peters"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "448c7b9ff5ed1e0427c703afe2aa6703": {
+      "_id": "448c7b9ff5ed1e0427c703afe2aa6703",
+      "title": "Bats from New Caledonia, the Solomon Islands, and New Hebrides",
+      "journal": {
+        "name": "Fieldiana Zoology",
+        "volume": "31",
+        "pages": "313--338",
+        "identifier": [
+          {
+            "id": "0015-0754",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1950",
+      "thumbnail_url": "id\/448c7b9ff5ed1e0427c703afe2aa6703\/thumbnail\/image",
+      "author": [
+        {
+          "name": "Colin Campbell Sanborn",
+          "firstname": "Colin Campbell",
+          "lastname": "Sanborn"
+        },
+        {
+          "name": "A J Nicholson",
+          "firstname": "A J",
+          "lastname": "Nicholson"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "914715cb3e8a549efae4c88ee9cc2ac1": {
+      "_id": "914715cb3e8a549efae4c88ee9cc2ac1",
+      "title": "A new species of Pteralopex Thomas, 1888 (Chirpotera: Pteropodidae) from the Fiji Islands",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "34",
+        "issue": "2",
+        "pages": "65--82",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1978",
+      "thumbnail_url": "id\/914715cb3e8a549efae4c88ee9cc2ac1\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        },
+        {
+          "name": "W N Beckon",
+          "firstname": "W N",
+          "lastname": "Beckon"
+        }
+      ],
+      "tags": [
+        "Pteropus",
+        "Desmalopex"
+      ]
+    },
+    "ab2e0def5e24b38064ae74d4230b2e67": {
+      "_id": "ab2e0def5e24b38064ae74d4230b2e67",
+      "title": "Bats (Mammalia: Chiroptera) from Indo-Australia",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "45",
+        "issue": "3",
+        "pages": "103--208",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1983",
+      "thumbnail_url": "id\/ab2e0def5e24b38064ae74d4230b2e67\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    },
+    "160e947e2f9cc037d8d3355cf3bc1083": {
+      "_id": "160e947e2f9cc037d8d3355cf3bc1083",
+      "title": "The baculum in the Vespertilioninae (Chiroptera: Vespertilionidae) with a systematic review, a synopsis of Pipistrellus and Eptesicus, and the descriptions of a new genus and subgenus",
+      "journal": {
+        "name": "Bulletin of the British Museum (Natural History) Zoology",
+        "volume": "52",
+        "issue": "7",
+        "pages": "225--305",
+        "identifier": [
+          {
+            "id": "0007-1498",
+            "type": "issn"
+          }
+        ]
+      },
+      "year": "1986",
+      "thumbnail_url": "id\/160e947e2f9cc037d8d3355cf3bc1083\/thumbnail\/image",
+      "author": [
+        {
+          "name": "J E Hill",
+          "firstname": "J E",
+          "lastname": "Hill"
+        },
+        {
+          "name": "D L Harrison",
+          "firstname": "D L",
+          "lastname": "Harrison"
+        }
+      ],
+      "tags": [
+        "Pteropus"
+      ]
+    }
+  }
+}
